@@ -1,0 +1,12 @@
+C:\Users\Don Cofre\source\repos\ModulosDeSeguridad_00001\Controller\bin\Debug\net6.0\Controller.deps.json
+C:\Users\Don Cofre\source\repos\ModulosDeSeguridad_00001\Controller\bin\Debug\net6.0\Controller.dll
+C:\Users\Don Cofre\source\repos\ModulosDeSeguridad_00001\Controller\bin\Debug\net6.0\ref\Controller.dll
+C:\Users\Don Cofre\source\repos\ModulosDeSeguridad_00001\Controller\bin\Debug\net6.0\Controller.pdb
+C:\Users\Don Cofre\source\repos\ModulosDeSeguridad_00001\Controller\obj\Debug\net6.0\Controller.csproj.AssemblyReference.cache
+C:\Users\Don Cofre\source\repos\ModulosDeSeguridad_00001\Controller\obj\Debug\net6.0\Controller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Don Cofre\source\repos\ModulosDeSeguridad_00001\Controller\obj\Debug\net6.0\Controller.AssemblyInfoInputs.cache
+C:\Users\Don Cofre\source\repos\ModulosDeSeguridad_00001\Controller\obj\Debug\net6.0\Controller.AssemblyInfo.cs
+C:\Users\Don Cofre\source\repos\ModulosDeSeguridad_00001\Controller\obj\Debug\net6.0\Controller.csproj.CoreCompileInputs.cache
+C:\Users\Don Cofre\source\repos\ModulosDeSeguridad_00001\Controller\obj\Debug\net6.0\Controller.dll
+C:\Users\Don Cofre\source\repos\ModulosDeSeguridad_00001\Controller\obj\Debug\net6.0\ref\Controller.dll
+C:\Users\Don Cofre\source\repos\ModulosDeSeguridad_00001\Controller\obj\Debug\net6.0\Controller.pdb
