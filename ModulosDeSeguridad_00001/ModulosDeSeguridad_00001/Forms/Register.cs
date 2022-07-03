@@ -19,6 +19,59 @@ namespace View.Forms
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            var enuum = new Model.Class.Enums();
+
+            var NameValid = new Controller.Controllers.ValidInfoUserController((int)enuum.ValidType, (int)enuum.Name, txtName.Text);
+            var DNIValid = new Controller.Controllers.ValidInfoUserController((int)enuum.ValidType, (int)enuum.DNI, txtDNI.Text);
+            var EmailValid = new Controller.Controllers.ValidInfoUserController((int)enuum.ValidType, (int)enuum.Email, txtEmail.Text);
+            var PasswordValid = new Controller.Controllers.ValidInfoUserController((int)enuum.ValidType, (int)enuum.Password, txtPassword.Text);
+            
+            
+            var EmailDDBB = new Controller.Controllers.ValidInfoUserController((int)enuum.CheckDDBB, (int)enuum.Email, txtEmail.Text);
+            var DNIDDBB = new Controller.Controllers.ValidInfoUserController((int)enuum.CheckDDBB, (int)enuum.DNI, txtDNI.Text);
+
+
+            if (txtEmail == txtReEmail && txtPassword == txtRePassword)
+            {
+                if (NameValid && DNIValid && EmailValid && PasswordValid && !EmailDDBB && !DNIDDBB)
+                {
+                    var us = Model.Class.User();
+                    us.Name = txtName.Text;
+                    us.Email = txtEmail.Text;
+                    us.Password = txtPassword.Text;
+                    us.DNI = txtDNI.Text;
+                    try
+                    {
+                        Controller.Controllers.UserCtrl(us);
+                        MessageBox.Show("User Signed in correctly");
+
+                    }
+                    catch (Exception err)
+                    {
+                        MessageBox.Show("Cant Sign in user: {0}",err.Message);
+                    }
+                    
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Data error: Verify data before submit");
+                }
+
+
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("ERROR: Email or Password aren't equal");
+            }
+
+
+
+
             /*
             if ( si todos los validadores son true)
             {
@@ -32,7 +85,7 @@ namespace View.Forms
             {
                 MessageBox.Show("Cant Sign in the user, try again with another data");
             }*/
-            
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
