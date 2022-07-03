@@ -33,17 +33,17 @@ namespace Model.Method
                             break;
 
                         case 2:
-
+                            //validated = validateDNIDDBB(data);
 
                             break;
 
                         case 3:
-
+                            //validated = validateEmailDDBB(data);
 
                             break;
 
                         case 4:
-
+                            //validated = validateUserDDBB(data);
 
                             break;
 
@@ -220,8 +220,59 @@ namespace Model.Method
                 }
                 return false;
             }
+            return false;
 
         }
+
+        /*public bool validateEmailDDBB (string parameter)
+        {
+            using (var ctx = new entity() )
+            {
+                var exists = ctx.Users.Where(x => x.Email == parameter).FirstOrDefault();
+                if (exists == null)
+                {
+                    return false;
+                }
+                else
+                { 
+                    return true;
+                }
+            }
+        }
+        public bool validateDNIDDBB(string parameter)
+        {
+            using (var ctx = new entity())
+            {
+                var exists = ctx.Users.Where(x => x.DNI == parameter).FirstOrDefault();
+                if (exists == null)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+        }
+        public bool validateUserDDBB(string parameter)
+        {
+            using (var ctx = new entity())
+            {
+                var exists = ctx.Users.Where(x => x.User == parameter).FirstOrDefault();
+                if (exists == null)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+        }*/
+
+
+
+
 
 
 
